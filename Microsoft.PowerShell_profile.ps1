@@ -1,3 +1,6 @@
+$env:GIT_ALLOW_PROTOCOL = "file:http:https:git:codecommit:ssh"
+. (Join-Path -Path (Split-Path -Parent -Path $PROFILE) -ChildPath 'Set-SolarizedLightColorDefaults.ps1')
+
 function Set-AwsProfile {
     param(
         [string]$ProfileName
